@@ -1,5 +1,11 @@
 fn main() {
-    let server = Server::new("127.0.0.1:8080");
+    let string = String::from("127.0.0.1:8080");
+    let string_slice = &string[10..14];
+
+    dbg!(&string);
+    dbg!(string_slice);
+
+    let server = Server::new(string);
     server.run()
 }
 
@@ -14,7 +20,7 @@ impl Server {
         }
     }
 
-    fn(self) {
-
+    fn run(self) {
+        println!("running!!!")
     }
 }
