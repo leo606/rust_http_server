@@ -1,5 +1,10 @@
 #![allow(dead_code)]
 
+// TODO: handle request and response headers
+// TODO: implements mutiple threads
+    // Module std::thread
+    // Module std::sync
+
 use server::Server;
 use website_handler::WebsiteHandler;
 use std::{env};
